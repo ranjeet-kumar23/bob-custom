@@ -44,15 +44,18 @@ If any of the custom modes in this repository generate background log assets or 
 ---
 
 ### Method 2: Global IDE Configuration (Universal Setup)
-Use this workflow if you want the custom configurations universally available across all project directories you open inside your IDE, without pasting a `.bob` folder into every separate project layout.
+Use this workflow if you want custom modes universally available across all project directories you open inside your IDE, without pasting a `.bob` folder into every separate project layout.
 
-1. Open your development environment window.
-2. Click on the **BOB Settings (Gear Icon)** located at the bottom of the Bob chat UI panel view.
-3. Navigate to the **Modes** configuration tab menu options.
-4. Click on the **Imports** button asset.
-5. Select and import the specific `.yaml` mode configuration file provided at the root of this cloned repository.
+1. Clone this configuration repository to your local computer:
+   ```bash
+   git clone [repository-link]
+   ```
+2. Open your development environment window.
+3. Click on the **BOB Settings (Gear Icon)** located at the bottom of the Bob chat UI panel view.
+4. Navigate to the **Modes** configuration tab menu options.
+5. Click on the **Imports** button asset.
+6. Navigate into the cloned repository, open the **`import-global-custom-mode/`** folder, and select the specific configuration `.yaml` file for the mode you wish to install (e.g., `session-logger.yaml`).
 
----
 
 ## 🚀 Activating and Executing Your Custom Modes
 
@@ -74,4 +77,6 @@ The following custom personas are configured and ready to use in this repository
 
 ### 1. 📝 Session Logger (`session-logger`)
 * **Description:** A meticulous engineering assistant designed to automate your development documentation. When you finish a task and issue a closing phrase (like *"All done"* or *"Goodbye"*), Bob captures the entire conversation history, code changes, and project milestones. He then compiles them into an isolated, standalone, timestamped Markdown file saved cleanly inside the `.bob/BobLogs/` directory.
+
+![Session Logger Mode](assets/session-logger-mode.png)
 
