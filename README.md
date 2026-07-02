@@ -78,3 +78,5 @@ The following custom personas are configured and ready to use in this repository
 ### 1. 📝 Session Logger (`session-logger`)
 * **Description:** A meticulous engineering assistant designed to automate your development documentation. When you finish a task and issue a closing phrase (like *"All done"* or *"Goodbye"*), Bob captures the entire conversation history, code changes, and project milestones. He then compiles them into an isolated, standalone, timestamped Markdown file saved cleanly inside the `.bob/BobLogs/` directory.
 
+![Session Logger Mode](assets/session-logger-mode.png)
+
